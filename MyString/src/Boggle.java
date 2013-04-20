@@ -1,6 +1,4 @@
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 
@@ -13,6 +11,7 @@ public class Boggle {
 		dictionary.add("WAR");
 		dictionary.add("DRAW");
 		dictionary.add("RAW");
+		dictionary.add("SAM");
 	}
 	
 	public Set<String> getAllWords(char[][] letters){
