@@ -20,6 +20,8 @@ public class CircularSuffixArray {
 	}
 
 	// returns index of ith sorted suffix
+	//ith row = sorted number of the row
+	//index[i] = original number of the row
 	public int index(int i) {
 		return sortedIndices[i];
 	}
