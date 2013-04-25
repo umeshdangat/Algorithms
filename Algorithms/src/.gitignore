@@ -68,3 +68,7 @@
 /abra.txt
 /abra.txt~
 /out
+/MoveToFront.class
+/MoveToFrontDecoderWorker.class
+/MoveToFrontEncoderWorker.class
+/MoveToFrontWorker.class
