@@ -10,12 +10,7 @@ public class CircularSuffixArrayBuilderTest {
 		CircularSuffixArrayComparator circularSuffixArrayComparator = new CircularSuffixArrayComparator(
 				text);
 		CircularSuffixArrayIndexBuilder circularSuffixArrayBuilder = new CircularSuffixArrayIndexBuilder();
-		Integer[] expected = new Integer[text.length()];
-		expected[0] = 1;
-		expected[1] = 0;
-		expected[2] = 2;
-		expected[3] = 3;
-		expected[4] = 4;
+		Integer[] expected = new Integer[]{1,0,2,3,4};
 		Integer[] actual = circularSuffixArrayBuilder
 				.buildSortedCircularSuffixArrayIndex(circularSuffixArrayComparator);
 		assertArrayEquals(expected, actual);
@@ -25,19 +20,7 @@ public class CircularSuffixArrayBuilderTest {
 	public void testWithABRACADABRA() {
 		CircularSuffixArrayIndexBuilder circularSuffixArrayBuilder = new CircularSuffixArrayIndexBuilder();
 		String text = "ABRACADABRA!";
-		Integer[] expected = new Integer[text.length()];
-		expected[0] = 11;
-		expected[1] = 10;
-		expected[2] = 7;
-		expected[3] = 0;
-		expected[4] = 3;
-		expected[5] = 5;
-		expected[6] = 8;
-		expected[7] = 1;
-		expected[8] = 4;
-		expected[9] = 6;
-		expected[10] = 9;
-		expected[11] = 2;
+		Integer[] expected = new Integer[]{11,10,7,0,3,5,8,1,4,6,9,2};
 		
 		CircularSuffixArrayComparator circularSuffixArrayComparator = new CircularSuffixArrayComparator(
 				text);
